@@ -1,0 +1,6 @@
+google-generativeai
+PyAudio
+SpeechRecognition
+gTTS
+python-dotenv
+mem0
