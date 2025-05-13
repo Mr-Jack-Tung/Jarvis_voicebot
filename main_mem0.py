@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+# JARVIS Voicebot - a simple voice Assistant built with Python and Gemini API
+# Create: 11 May 2025
+# Author: Mr.Jack _ www.bicweb.vn
+# Version: 0.1.0
+# Date: 13 May 2025 - 11 AM
+
 import google.generativeai as genai
 # import pyaudio
 import speech_recognition as sr
@@ -11,7 +18,7 @@ from dotenv import load_dotenv
 from mem0 import MemoryClient
 
 # Load environment variables
-load_dotenv(dotenv_path="gemini_audio_chatbot/.env")
+load_dotenv(dotenv_path=".env")
 
 # Global flag for interrupting audio playback
 interrupt_flag = False
