@@ -1,9 +1,8 @@
 # Gemini Audio Chatbot
-
 This is a voice-based chatbot powered by Google's Gemini AI model. It allows you to interact with the AI using your voice or text.
 
-Author: Mr. Jack Tung
-Create: 11 May 2024 - 11 PM
+- Author: Mr. Jack Tung
+- Create: 11 May 2024 - 11 PM
 
 ## Prerequisites
 
