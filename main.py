@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+# JARVIS Voicebot - a simple voice Assistant built with Python and Gemini API
+# Create: 11 May 2025
+# Author: Mr.Jack _ www.bicweb.vn
+# Version: 0.1.0
+# Date: 13 May 2025 - 11 AM
+
 import google.generativeai as genai
 # import pyaudio
 import speech_recognition as sr
