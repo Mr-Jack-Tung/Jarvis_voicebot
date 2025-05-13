@@ -111,31 +111,6 @@ def speak(text, lang="vi", slow=False):
         tts.save(output_file)
         print("▶️ Playing audio... (Press Ctrl+C to stop)")
         
-        # Create a thread to monitor the interrupt flag with a timeout
-        # def monitor_interrupt():
-        #     global interrupt_flag
-        #     max_time = 60  # Maximum time to play audio (60 seconds)
-        #     elapsed = 0
-            
-        #     while not interrupt_flag and elapsed < max_time:
-        #         time.sleep(0.1)
-        #         elapsed += 0.1
-        #         if interrupt_flag:
-        #             os.system("pkill mpg123")
-        #             break
-            
-        #     # If we reach max time, force stop
-        #     if elapsed >= max_time and not interrupt_flag:
-        #         print("⏱️ Maximum audio playback time reached, stopping...")
-        #         interrupt_flag = True
-        #         os.system("pkill mpg123")
-        
-        # Start the monitoring thread
-        # monitor_thread = threading.Thread(target=monitor_interrupt)
-        # monitor_thread.daemon = True
-        # monitor_thread.start()
-        
-        # speed_factor = "1.5" if slow else ""  # Adjust speed parameter based on slow flag
         # Play using mpg123 (external player)
         exit_code = os.system(f"mpg123 -q {output_file}")
         
